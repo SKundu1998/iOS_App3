@@ -1,5 +1,5 @@
 #iOS_App3
 
-Initial commit for version control.
+Experimented with basics of AutoLayouts - alignment of labels to make the design responsive across devices.
 
-Version: 0.01
+Version: 0.1
