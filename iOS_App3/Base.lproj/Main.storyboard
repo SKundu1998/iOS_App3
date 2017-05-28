@@ -21,43 +21,66 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This label is constrained to the center" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNM-U3-wn3">
-                                <rect key="frame" x="44" y="323" width="287" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is it Prime?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oJq-cf-F0Z">
+                                <rect key="frame" x="110" y="36" width="154" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a number in the box..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HfP-qG-630">
+                                <rect key="frame" x="82" y="91" width="210.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This label is constrained to the top" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IEb-S0-zd9">
-                                <rect key="frame" x="56" y="28" width="263" height="21"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rCr-YI-eiN">
+                                <rect key="frame" x="110" y="128" width="154" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="...and find out if it's prime." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpd-gd-v3d">
+                                <rect key="frame" x="88" y="174" width="199" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This label is constrained below the upper one" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zeU-RZ-nAW">
-                                <rect key="frame" x="14.5" y="57" width="346" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="          " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JfE-ut-YjL">
+                                <rect key="frame" x="91.5" y="321" width="191.5" height="95.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This label is constrained to the bottom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59k-ud-Qdq">
-                                <rect key="frame" x="41" y="626" width="293" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ML-k2-wTu">
+                                <rect key="frame" x="163" y="211" width="49" height="30"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="buttonSubmitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dC2-4g-gQ1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="DNM-U3-wn3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CAm-Qy-Upa"/>
-                            <constraint firstItem="59k-ud-Qdq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b9I-T6-kJK"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="59k-ud-Qdq" secondAttribute="bottom" constant="20" id="b9w-v1-jNI"/>
-                            <constraint firstItem="IEb-S0-zd9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="bpW-iv-5ca"/>
-                            <constraint firstItem="DNM-U3-wn3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="foX-8H-Z2c"/>
-                            <constraint firstItem="IEb-S0-zd9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k2g-7X-OXj"/>
-                            <constraint firstItem="zeU-RZ-nAW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mKS-dE-uXm"/>
-                            <constraint firstItem="zeU-RZ-nAW" firstAttribute="top" secondItem="IEb-S0-zd9" secondAttribute="bottom" constant="8" id="zEI-ls-7cL"/>
+                            <constraint firstItem="oJq-cf-F0Z" firstAttribute="centerX" secondItem="HfP-qG-630" secondAttribute="centerX" id="1df-M6-QgN"/>
+                            <constraint firstItem="HfP-qG-630" firstAttribute="top" secondItem="oJq-cf-F0Z" secondAttribute="bottom" constant="16" id="2L2-a4-2j6"/>
+                            <constraint firstItem="JfE-ut-YjL" firstAttribute="top" secondItem="7ML-k2-wTu" secondAttribute="bottom" constant="80" id="BED-dH-JVh"/>
+                            <constraint firstItem="7ML-k2-wTu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FXs-m4-Zme"/>
+                            <constraint firstItem="mpd-gd-v3d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ifa-Sl-uyg"/>
+                            <constraint firstItem="JfE-ut-YjL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LCD-iH-t7j"/>
+                            <constraint firstItem="mpd-gd-v3d" firstAttribute="top" secondItem="rCr-YI-eiN" secondAttribute="bottom" constant="16" id="PMY-Jr-W29"/>
+                            <constraint firstItem="7ML-k2-wTu" firstAttribute="top" secondItem="mpd-gd-v3d" secondAttribute="bottom" constant="16" id="ZjC-iJ-JLH"/>
+                            <constraint firstItem="rCr-YI-eiN" firstAttribute="width" secondItem="oJq-cf-F0Z" secondAttribute="width" id="brr-h5-KfI"/>
+                            <constraint firstItem="rCr-YI-eiN" firstAttribute="top" secondItem="HfP-qG-630" secondAttribute="bottom" constant="16" id="cHE-nh-m0l"/>
+                            <constraint firstItem="rCr-YI-eiN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lUo-BC-Wiq"/>
+                            <constraint firstItem="oJq-cf-F0Z" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="nRO-0C-eHd"/>
+                            <constraint firstItem="HfP-qG-630" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tUU-ES-3NE"/>
+                            <constraint firstItem="oJq-cf-F0Z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wTf-dN-GkL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="labelIsItPrime" destination="JfE-ut-YjL" id="FgO-Zv-RI1"/>
+                        <outlet property="textNumberInput" destination="rCr-YI-eiN" id="fUQ-s5-aFA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
