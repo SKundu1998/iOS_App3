@@ -1,5 +1,5 @@
 #iOS_App3
 
-Finished the design, as well as the error handling for non-numeric values.
+Rebuilt the app to make it responsive on all devices, including the 4S, in all orientations.
 
 Version: 0.2
